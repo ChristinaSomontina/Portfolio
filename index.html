@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Christina B. Somontina — Portfolio</title>
+  <meta name="description" content="Portfolio of Christina B. Somontina — BSIT student and aspiring IT professional." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --bg: 255 255 255;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+    /* Soft animated gradient */
+    .gradient-bg {
+      background: radial-gradient(1200px 800px at 10% 10%, rgba(99,102,241,0.15), transparent 60%),
+                  radial-gradient(1000px 700px at 90% 20%, rgba(236,72,153,0.15), transparent 60%),
+                  radial-gradient(900px 700px at 30% 90%, rgba(34,197,94,0.15), transparent 60%);
+    }
+    .glass { background: rgba(255,255,255,0.75); backdrop-filter: blur(10px); }
+    .card { transition: transform .2s ease, box-shadow .2s ease; }
+    .card:hover { transform: translateY(-4px); }
+  </style>
+</head>
+<body class="min-h-screen gradient-bg text-slate-900">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-30">
+    <div class="glass border-b border-white/40">
+      <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+        <a href="#home" class="font-extrabold tracking-tight text-xl">Christina<span class="text-indigo-600">.</span></a>
+        <nav class="hidden md:flex gap-6 text-sm font-medium">
+          <a href="#about" class="hover:text-indigo-600">About</a>
+          <a href="#education" class="hover:text-indigo-600">Education</a>
+          <a href="#hobbies" class="hover:text-indigo-600">Hobbies</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        </nav>
+        <a href="#contact" class="inline-flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white text-sm font-semibold shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 md:ml-4">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative">
+    <div class="mx-auto max-w-6xl px-4 pt-16 pb-12 md:pt-24 md:pb-16">
+      <div class="grid md:grid-cols-5 gap-8 items-center">
+        <div class="md:col-span-3">
+          <p class="text-sm uppercase tracking-widest text-slate-500">Portfolio</p>
+          <h1 class="mt-2 text-4xl md:text-6xl font-extrabold leading-tight">
+            Christina B. Somontina
+          </h1>
+          <p class="mt-4 text-lg md:text-xl text-slate-700 max-w-2xl">BSIT student and aspiring IT professional. I’m eager to learn, grow, and build real projects in the IT field.</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <span class="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 text-sm shadow-sm border border-white/60"><span class="inline-block w-2 h-2 rounded-full bg-indigo-600"></span> Roman Catholic</span>
+            <span class="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 text-sm shadow-sm border border-white/60"><span class="inline-block w-2 h-2 rounded-full bg-pink-500"></span> Filipino</span>
+            <span class="inline-flex items-center gap-2 rounded-full bg-white/70 px-3 py-1 text-sm shadow-sm border border-white/60"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500"></span> Age 25</span>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <div class="card glass rounded-3xl p-6 shadow-lg border border-white/40">
+            <!-- Replace the emoji div with an image -->
+            <img 
+              src="pic.jpg" 
+              alt="Christina B. Somontina"
+              class="aspect-square w-full rounded-2xl object-cover"
+            />
+            <dl class="mt-6 grid grid-cols-2 gap-4 text-sm">
+              <div>
+                <dt class="text-slate-500">Nationality</dt>
+                <dd class="font-semibold">Filipino</dd>
+              </div>
+              <div>
+                <dt class="text-slate-500">Height</dt>
+                <dd class="font-semibold">5’6”</dd>
+              </div>
+              <div>
+                <dt class="text-slate-500">Weight</dt>
+                <dd class="font-semibold">50 kg</dd>
+              </div>
+              <div>
+                <dt class="text-slate-500">Location</dt>
+                <dd class="font-semibold">Moises Padilla, Negros Occidental</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="relative">
+    <div class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+      <div class="grid md:grid-cols-12 gap-8 items-start">
+        <div class="md:col-span-5">
+          <h2 class="text-2xl md:text-3xl font-bold">About Me</h2>
+          <p class="mt-4 text-slate-700 leading-relaxed">I am Christina B. Somontina. Although the BSIT course has its challenges, I’m determined to explore, practice, and keep learning. I value collaboration and I’m grateful to be studying alongside supportive friends this school year.</p>
+        </div>
+        <div class="md:col-span-7">
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div class="card glass rounded-2xl p-6 shadow border border-white/40">
+              <h3 class="font-semibold">What I’m working on</h3>
+              <p class="mt-2 text-sm text-slate-700">Building solid foundations in programming, web fundamentals, and problem‑solving.</p>
+            </div>
+            <div class="card glass rounded-2xl p-6 shadow border border-white/40">
+              <h3 class="font-semibold">Goals</h3>
+              <p class="mt-2 text-sm text-slate-700">Grow into an IT professional who creates helpful, user‑friendly solutions.</p>
+            </div>
+            <div class="card glass rounded-2xl p-6 shadow border border-white/40">
+              <h3 class="font-semibold">Strengths</h3>
+              <p class="mt-2 text-sm text-slate-700">Curious, patient, and willing to learn by doing.</p>
+            </div>
+            <div class="card glass rounded-2xl p-6 shadow border border-white/40">
+              <h3 class="font-semibold">Values</h3>
+              <p class="mt-2 text-sm text-slate-700">Teamwork, respect, and continuous improvement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Timeline -->
+  <section id="education" class="relative">
+    <div class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+      <h2 class="text-2xl md:text-3xl font-bold">Education</h2>
+      <ol class="mt-8 relative border-s border-slate-200">
+        <li class="ms-6 mb-8">
+          <span class="absolute -start-3.5 flex size-7 items-center justify-center rounded-full bg-white border border-slate-200 shadow">📘</span>
+          <h3 class="font-semibold">Moises Padilla Elementary School</h3>
+          <p class="text-sm text-slate-600">2007 – 2013</p>
+        </li>
+        <li class="ms-6 mb-8">
+          <span class="absolute -start-3.5 flex size-7 items-center justify-center rounded-full bg-white border border-slate-200 shadow">🏫</span>
+          <h3 class="font-semibold">Guinpana‑an Poblacion High School</h3>
+          <p class="text-sm text-slate-600">2013 – 2016</p>
+        </li>
+        <li class="ms-6 mb-8">
+          <span class="absolute -start-3.5 flex size-7 items-center justify-center rounded-full bg-white border border-slate-200 shadow">🎓</span>
+          <h3 class="font-semibold">San Isidro Academy</h3>
+          <p class="text-sm text-slate-600">2016 – 2018</p>
+        </li>
+        <li class="ms-6">
+          <span class="absolute -start-3.5 flex size-7 items-center justify-center rounded-full bg-white border border-slate-200 shadow">💻</span>
+          <h3 class="font-semibold">STI West Negros University — BSIT</h3>
+          <p class="text-sm text-slate-600">2023 – 2025</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Hobbies -->
+  <section id="hobbies" class="relative">
+    <div class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+      <div class="grid md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-5">
+          <h2 class="text-2xl md:text-3xl font-bold">Hobbies & Interests</h2>
+          <p class="mt-3 text-slate-700">In my free time, I enjoy creative and social activities that keep me inspired.</p>
+        </div>
+        <div class="md:col-span-7">
+          <div class="flex flex-wrap gap-3 text-sm">
+            <span class="px-3 py-1 rounded-full bg-white/70 border border-white/60 shadow-sm">Calligraphy</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 border border-white/60 shadow-sm">Listening to music</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 border border-white/60 shadow-sm">Traveling</span>
+            <span class="px-3 py-1 rounded-full bg-white/70 border border-white/60 shadow-sm">Bonding with friends</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="relative">
+    <div class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+      <div class="grid md:grid-cols-12 gap-8">
+        <div class="md:col-span-6">
+          <h2 class="text-2xl md:text-3xl font-bold">Contact</h2>
+          <p class="mt-3 text-slate-700">Want to connect? Send a message or reach me via the details below.</p>
+          <ul class="mt-6 space-y-3 text-sm">
+            <li class="flex items-start gap-3">
+              <span class="mt-1">📞</span>
+              <span><span class="font-semibold">Phone:</span> <a class="underline decoration-indigo-400 underline-offset-4" href="tel:+639277975172">+63 927 797 5172</a></span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-1">📍</span>
+              <span><span class="font-semibold">Address:</span> Moises Padilla, Negros Occidental</span>
+            </li>
+          </ul>
+        </div>
+        <div class="md:col-span-6">
+          <form class="card glass rounded-2xl p-6 shadow border border-white/40" onsubmit="event.preventDefault(); alert('Thanks! This demo form does not send yet.');">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium text-slate-700">Name</label>
+                <input type="text" class="mt-1 w-full rounded-xl border border-slate-200 bg-white/80 px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-400" placeholder="Your name" required>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-slate-700">Email</label>
+                <input type="email" class="mt-1 w-full rounded-xl border border-slate-200 bg-white/80 px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-400" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="mt-4">
+              <label class="block text-sm font-medium text-slate-700">Message</label>
+              <textarea class="mt-1 w-full rounded-xl border border-slate-200 bg-white/80 px-3 py-2 outline-none focus:ring-2 focus:ring-indigo-400" rows="5" placeholder="Write your message..."></textarea>
+            </div>
+            <button class="mt-4 inline-flex items-center rounded-xl bg-indigo-600 px-4 py-2 text-white text-sm font-semibold shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400" type="submit">Send Message</button>
+            <p class="mt-2 text-xs text-slate-500">*This form is a demo. Hook it up to a service (e.g., Formspree) to make it live.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-sm text-slate-500">
+    <p>© <span id="year"></span> Christina B. Somontina. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
